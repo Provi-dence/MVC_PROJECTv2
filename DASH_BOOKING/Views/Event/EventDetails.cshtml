@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "EventDetails";
+    Layout = "~/Views/Shared/EventDetails_Layout.cshtml";
+}
+
+
+
+
+<main id="main">
+    <!-- ======= Event Details Section ======= -->
+    <section id="event-details" class="event-details">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-8">
+                    <div class="event-details-slider swiper">
+                        <div class="swiper-wrapper align-items-center">
+                            @foreach (var image in Model.Images)
+                            {
+                                <div class="swiper-slide">
+                                    <img src="@Url.Content(image)" alt="">
+                                </div>
+                            }
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="event-info">
+                        <h3>Event Information</h3>
+                        <ul>
+                            <li><strong>Name:</strong> @Model.EventName</li>
+                            <li><strong>Date:</strong> @Model.EventDate.ToShortDateString()</li>
+                            <li><strong>Time:</strong> @Model.EventTime.ToShortTimeString()</li>
+                            <li><strong>Location:</strong> @Model.Location</li>
+                            <li><strong>Organizer Email:</strong> @Model.OrganizerEmail</li>
+                            @if (!string.IsNullOrEmpty(Model.OrganizerPhone))
+                            {
+                                <li><strong>Organizer Phone:</strong> @Model.OrganizerPhone</li>
+                            }
+                        </ul>
+                    </div>
+                    <div class="event-description">
+                        <h2>@Model.EventName</h2>
+                        <p>@Model.Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Event Details Section -->
+</main><!-- End #main -->
