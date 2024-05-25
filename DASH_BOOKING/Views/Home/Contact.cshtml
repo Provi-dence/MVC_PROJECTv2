@@ -53,51 +53,60 @@
                     @using (Html.BeginForm("CreateEvent", "Event", FormMethod.Post, new { @class = "php-email-form" }))
                     {
                         @Html.AntiForgeryToken()
-                        <div class="form-horizontal">
-                            <h3>Request Event</h3>
-                            <div class="row">
-                                <div class="col-md-12 form-group">
-                                    @Html.EditorFor(model => model.EventName, new { htmlAttributes = new { @class = "form-control", @placeholder = "Event Name" } })
-                                    @Html.ValidationMessageFor(model => model.EventName, "", new { @class = "text-danger" })
-                                </div>
-                            </div>
-                            <div class="form-group mt-3">
-                                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control", @placeholder = "Description" } })
-                                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-md-6 form-group">
-                                    @Html.EditorFor(model => model.EventDate, new { htmlAttributes = new { @class = "form-control", @placeholder = "Event Date" } })
-                                    @Html.ValidationMessageFor(model => model.EventDate, "", new { @class = "text-danger" })
-                                </div>
-                                <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    @Html.EditorFor(model => model.EventTime, new { htmlAttributes = new { @class = "form-control", @placeholder = "Event Time" } })
-                                    @Html.ValidationMessageFor(model => model.EventTime, "", new { @class = "text-danger" })
-                                </div>
-                            </div>
-                            <div class="form-group mt-3">
-                                @Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control", @placeholder = "Location" } })
-                                @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-md-6 form-group">
-                                    @Html.EditorFor(model => model.OrganizerEmail, new { htmlAttributes = new { @class = "form-control", @placeholder = "Organizer Email" } })
-                                    @Html.ValidationMessageFor(model => model.OrganizerEmail, "", new { @class = "text-danger" })
-                                </div>
-                                <div class="col-md-6 form-group mt-3 mt-md-0">
-                                    @Html.EditorFor(model => model.OrganizerPhone, new { htmlAttributes = new { @class = "form-control", @placeholder = "Organizer Phone" } })
-                                    @Html.ValidationMessageFor(model => model.OrganizerPhone, "", new { @class = "text-danger" })
-                                </div>
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit">Submit Event Request</button>
+                    <div class="form-horizontal">
+                        <h3>Request Event</h3>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                @Html.EditorFor(model => model.EventName, new { htmlAttributes = new { @class = "form-control", @placeholder = "Event Name" } })
+                                @Html.ValidationMessageFor(model => model.EventName, "", new { @class = "text-danger" })
                             </div>
                         </div>
+                        <div class="form-group mt-3">
+                            @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control", @placeholder = "Description" } })
+                            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 form-group">
+                                @Html.EditorFor(model => model.EventDate, new { htmlAttributes = new { @class = "form-control", @placeholder = "Event Date" } })
+                                @Html.ValidationMessageFor(model => model.EventDate, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                @Html.EditorFor(model => model.EventTime, new { htmlAttributes = new { @class = "form-control", @placeholder = "Event Time" } })
+                                @Html.ValidationMessageFor(model => model.EventTime, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            @Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control", @placeholder = "Location" } })
+                            @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 form-group">
+                                @Html.EditorFor(model => model.OrganizerEmail, new { htmlAttributes = new { @class = "form-control", @placeholder = "Organizer Email" } })
+                                @Html.ValidationMessageFor(model => model.OrganizerEmail, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                @Html.EditorFor(model => model.OrganizerPhone, new { htmlAttributes = new { @class = "form-control", @placeholder = "Organizer Phone" } })
+                                @Html.ValidationMessageFor(model => model.OrganizerPhone, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            @if (TempData["SuccessMessage"] != null)
+                            {
+                                <div class="sent-message">@TempData["SuccessMessage"]</div>
+                            }
+                            else if (TempData["ErrorMessage"] != null)
+                            {
+                                <div class="error-message">@TempData["ErrorMessage"]</div>
+                            }
+                            else
+                            {
+                                <div class="loading">Loading</div>
+                            }
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Submit Event Request</button>
+                        </div>
+                    </div>
                     }
                 </div>
             </div>

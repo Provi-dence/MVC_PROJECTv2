@@ -9,7 +9,6 @@
     <title>Login</title>
     <link rel="stylesheet" href="~/assets/style.css" />
     <style>
-        /* Custom input styles */
         .custom-input {
             padding: 15px 5px !important;
             margin-left: 10px !important;
@@ -53,13 +52,12 @@
                     </div>
                     <div class="cont_form_login">
                         <a href="#" onclick="hidden_login_and_sign_up()"><img src="~/images/icons/arrow-left-25.png" /></a>
-
                         <h2>LOGIN</h2>
                         @using (Html.BeginForm("Login", "Accounts", FormMethod.Post))
                         {
                             @Html.AntiForgeryToken()
-                            <input type="text" name="Email" placeholder="Email" class="custom-input" />
-                            <input type="password" name="Password" placeholder="Password" class="custom-input" />
+                            <input type="email" name="Email" placeholder="Email" class="custom-input" required />
+                            <input type="password" name="Password" placeholder="Password" class="custom-input" required />
                             <button type="submit" class="btn_login">LOGIN</button>
                         }
                     </div>
@@ -69,10 +67,10 @@
                         @using (Html.BeginForm("Register", "Accounts", FormMethod.Post))
                         {
                             @Html.AntiForgeryToken()
-                            <input type="text" name="Email" placeholder="Email" class="custom-input" />
-                            <input type="text" name="UserName" placeholder="User" class="custom-input" />
-                            <input type="password" name="Password" placeholder="Password" class="custom-input" />
-                            <input type="password" name="ConfirmPassword" placeholder="Confirm Password" class="custom-input" />
+                            <input type="text" name="UserName" placeholder="User" class="custom-input" required />
+                            <input type="email" name="Email" placeholder="Email" class="custom-input" required />
+                            <input type="password" name="Password" placeholder="Password" class="custom-input" required />
+                            <input type="password" name="ConfirmPassword" placeholder="Confirm Password" class="custom-input" required />
                             <button type="submit" class="btn_sign_up">SIGN UP</button>
                         }
                     </div>

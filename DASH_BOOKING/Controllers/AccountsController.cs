@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 using DASH_BOOKING.Models;
 
@@ -16,8 +17,11 @@ namespace DASH_BOOKING.Controllers
 
         public ActionResult Panel()
         {
-            return View();
+            List<EventRequest> eventRequests = db.EventRequests.ToList();  // Fetch event requests from the database
+            return View(eventRequests);
         }
+
+
 
         public ActionResult EventList()
         {
@@ -29,41 +33,59 @@ namespace DASH_BOOKING.Controllers
             return View();
         }
 
-
         // POST: Accounts/Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Login(User user)
+        public ActionResult Login(string Email, string Password)
         {
             if (ModelState.IsValid)
             {
-                var existingUser = db.Users.FirstOrDefault(u => u.Email == user.Email && u.Password == user.Password);
+                var existingUser = db.Users.FirstOrDefault(u => u.Email == Email && u.Password == Password);
                 if (existingUser != null)
                 {
-                    // Logic for successful login
-                    return RedirectToAction("Index", "Home");
+                    if (existingUser.Role == "Admin")
+                    {
+                        return RedirectToAction("Panel", "Accounts");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
                 else
                 {
                     ModelState.AddModelError("", "Invalid login attempt.");
                 }
             }
-            return View("LoginRegister", user);
+            return View("LoginRegister");
         }
 
         // POST: Accounts/Register
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Register(User user)
+        public ActionResult Register(string UserName, string Email, string Password, string ConfirmPassword)
         {
             if (ModelState.IsValid)
             {
-                db.Users.Add(user);
-                db.SaveChanges();
-                // Logic for successful registration
-                return RedirectToAction("LoginRegister");
+                if (Password == ConfirmPassword)
+                {
+                    var user = new User
+                    {
+                        UserName = UserName,
+                        Email = Email,
+                        Password = Password,
+                        Role = "User"  // Assign the default role as User
+                    };
+                    db.Users.Add(user);
+                    db.SaveChanges();
+                    return RedirectToAction("LoginRegister", "Accounts");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Passwords do not match.");
+                }
             }
-            return View("LoginRegister", user);
+            return View("LoginRegister");
         }
 
         protected override void Dispose(bool disposing)

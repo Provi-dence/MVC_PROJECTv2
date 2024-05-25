@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace DASH_BOOKING.Models
 {
-    // This is for contact.cshtml
     public class EventRequest
     {
+        [Key]
+        public int EventRequestId { get; set; }
+
         [Required]
         public string EventName { get; set; }
 
@@ -33,18 +32,5 @@ namespace DASH_BOOKING.Models
 
         [Phone]
         public string OrganizerPhone { get; set; }
-
-        public EventRequest() { }
-
-        public EventRequest(string eventName, string description, DateTime eventDate, TimeSpan eventTime, string location, string organizerEmail, string organizerPhone)
-        {
-            EventName = eventName;
-            Description = description;
-            EventDate = eventDate;
-            EventTime = eventTime;
-            Location = location;
-            OrganizerEmail = organizerEmail;
-            OrganizerPhone = organizerPhone;
-        }
     }
 }

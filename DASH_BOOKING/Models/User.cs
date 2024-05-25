@@ -20,6 +20,9 @@ namespace DASH_BOOKING.Models
         [StringLength(100)]
         public string Password { get; set; }
 
+        [Required]
+        public string Role { get; set; } = "User";  // Default role
+
         public DateTime CreatedAt { get; set; }
 
         public User()
@@ -30,11 +33,9 @@ namespace DASH_BOOKING.Models
 
     public class Admin : User
     {
-        [Required]
-        public string Role { get; set; } = "Admin";
-
-        public Admin() : base()
+        public Admin()
         {
+            Role = "Admin";  // Admin role
         }
     }
 }
