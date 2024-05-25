@@ -14,6 +14,22 @@ namespace DASH_BOOKING.Controllers
             return View();
         }
 
+        public ActionResult Panel()
+        {
+            return View();
+        }
+
+        public ActionResult EventList()
+        {
+            return View();
+        }
+
+        public ActionResult UserList()
+        {
+            return View();
+        }
+
+
         // POST: Accounts/Login
         [HttpPost]
         [ValidateAntiForgeryToken]
