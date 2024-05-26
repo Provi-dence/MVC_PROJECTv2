@@ -8,7 +8,7 @@
 <section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6 text-center mb-5">
+            <div class="col-md-12 text-center mb-5">
                 <h2 class="heading-section">Event Requests</h2>
             </div>
         </div>
@@ -17,8 +17,8 @@
                 <div class="table-wrap">
                     @if (Model != null && Model.Any())
                     {
-                        <table class="table table-responsive-xl">
-                            <thead>
+                        <table class="table table-striped table-bordered table-hover">
+                            <thead class="thead-dark">
                                 <tr>
                                     <th>&nbsp;</th>
                                     <th>Event Name</th>
@@ -28,18 +28,19 @@
                                     <th>Location</th>
                                     <th>Organizer Email</th>
                                     <th>Organizer Phone</th>
-                                    <th>&nbsp;</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach (var eventRequest in Model)
                                 {
-                                    <tr class="alert" role="alert">
+                                    <tr>
                                         <td>
-                                            <label class="checkbox-wrap checkbox-primary">
+                                            <!--<label class="checkbox-wrap checkbox-primary">
                                                 <input type="checkbox" checked>
                                                 <span class="checkmark"></span>
-                                            </label>
+                                            </label>-->
                                         </td>
                                         <td>@eventRequest.EventName</td>
                                         <td>@eventRequest.Description</td>
@@ -49,9 +50,13 @@
                                         <td>@eventRequest.OrganizerEmail</td>
                                         <td>@eventRequest.OrganizerPhone</td>
                                         <td>
-                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span class="badge badge-@GetBadgeClass(eventRequest.Status)">@eventRequest.Status</span>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editModal" data-id="@eventRequest.EventRequestId" data-status="@eventRequest.Status">Edit</button>
+                                            <!--<button type="button" class="close btn btn-danger btn-sm" aria-label="Close">
                                                 <span aria-hidden="true"><i class="fa fa-close"></i></span>
-                                            </button>
+                                            </button>-->
                                         </td>
                                     </tr>
                                 }
@@ -60,10 +65,131 @@
                     }
                     else
                     {
-                        <p>No event requests available.</p>
+                        <p class="alert alert-info">No event requests available.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Event Request Status</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    @using (Html.BeginForm("UpdateEventRequestStatus", "Accounts", FormMethod.Post))
+                    {
+                        @Html.Hidden("id", "", new { id = "eventRequestId" })
+                        <div class="form-group">
+                            <label for="status">Status</label>
+                            <select id="status" name="status" class="form-control">
+                                <option value="Pending" selected>Pending</option>
+                                <option value="Approved">Approved</option>
+                                <option value="Rejected">Rejected</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
                     }
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#editModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget);
+                var id = button.data('id');
+                var status = button.data('status');
+                var modal = $(this);
+                modal.find('.modal-body #eventRequestId').val(id);
+                modal.find('.modal-body #status').val(status);
+            });
+        });
+    </script>
+}
+
+@functions {
+    public string GetBadgeClass(string status)
+    {
+        switch (status)
+        {
+            case "Approved":
+                return "success";
+            case "Rejected":
+                return "danger";
+            case "Pending":
+            default:
+                return "warning";
+        }
+    }
+}
+
+<style>
+    .table-wrap {
+        overflow-x: auto;
+    }
+
+    .table {
+        width: 100%; /* Set table width to 100% */
+    }
+
+        .table thead {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0,0,0,.05);
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: rgba(0,0,0,.075);
+    }
+
+    .checkbox-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    .checkbox-primary input:checked + .checkmark {
+        background-color: #007bff;
+    }
+
+    .checkmark {
+        position: relative;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+    .checkbox-primary input:checked + .checkmark:after {
+        display: block;
+    }
+
+    .checkbox-primary .checkmark:after {
+        left: 8px;
+        top: 4px;
+        width: 4px;
+        height: 8px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+</style>

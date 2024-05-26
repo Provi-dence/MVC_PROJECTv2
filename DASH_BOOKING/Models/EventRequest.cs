@@ -32,5 +32,8 @@ namespace DASH_BOOKING.Models
 
         [Phone]
         public string OrganizerPhone { get; set; }
+
+        [Required]
+        public string Status { get; set; } = "Pending";
     }
 }

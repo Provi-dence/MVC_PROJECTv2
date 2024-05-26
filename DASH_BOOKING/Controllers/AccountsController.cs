@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 using DASH_BOOKING.Models;
@@ -15,22 +16,42 @@ namespace DASH_BOOKING.Controllers
             return View();
         }
 
+        public ActionResult Deactivated()
+        {
+            return View();
+        }
+
+
         public ActionResult Panel()
         {
             List<EventRequest> eventRequests = db.EventRequests.ToList();  // Fetch event requests from the database
             return View(eventRequests);
         }
 
-
+        [HttpPost]
+        public ActionResult UpdateEventRequestStatus(int id, string status)
+        {
+            var eventRequest = db.EventRequests.Find(id);
+            if (eventRequest != null)
+            {
+                eventRequest.Status = status;
+                db.SaveChanges();
+            }
+            return RedirectToAction("Panel");
+        }
 
         public ActionResult EventList()
         {
-            return View();
+            List<EventModel> eventModels = db.EventModels.ToList();
+            return View(eventModels);  // Pass the list of events to the view
         }
 
         public ActionResult UserList()
         {
-            return View();
+            List<User> users = db.Users.ToList();  // Fetch users from the database
+                                                   
+            System.Diagnostics.Debug.WriteLine("Users Count: " + users.Count);  // Debugging: Check if users are being retrieved
+            return View(users);  // Pass the list of users to the view
         }
 
         // POST: Accounts/Login
@@ -43,6 +64,11 @@ namespace DASH_BOOKING.Controllers
                 var existingUser = db.Users.FirstOrDefault(u => u.Email == Email && u.Password == Password);
                 if (existingUser != null)
                 {
+                    if (existingUser.Status == "Inactive")
+                    {
+                        return RedirectToAction("Deactivated", "Accounts");
+                    }
+
                     if (existingUser.Role == "Admin")
                     {
                         return RedirectToAction("Panel", "Accounts");
@@ -59,6 +85,7 @@ namespace DASH_BOOKING.Controllers
             }
             return View("LoginRegister");
         }
+
 
         // POST: Accounts/Register
         [HttpPost]
@@ -87,6 +114,33 @@ namespace DASH_BOOKING.Controllers
             }
             return View("LoginRegister");
         }
+
+        public ActionResult DeleteUser(int id)
+        {
+            var user = db.Users.Find(id);
+            if (user != null)
+            {
+                try
+                {
+                    // Update user status to inactive
+                    user.Status = "Inactive";
+
+                    // Save changes to the database
+                    db.SaveChanges();
+                }
+                catch (Exception ex)
+                {
+                    // Log the error (you can log to a file, event log, etc.)
+                    System.Diagnostics.Debug.WriteLine("Error deactivating user: " + ex.Message);
+
+                    // Optionally, return an error view
+                    return View("Error", new HandleErrorInfo(ex, "Accounts", "DeleteUser"));
+                }
+            }
+            return RedirectToAction("UserList");
+        }
+
+
 
         protected override void Dispose(bool disposing)
         {

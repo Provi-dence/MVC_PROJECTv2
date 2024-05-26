@@ -3,118 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\accounts\\panel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\accounts\\panel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\models\\eventrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\models\\eventrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\models\\eventmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\models\\eventmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\accounts\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\accounts\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\views\\accounts\\eventlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\accounts\\eventlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\event\\events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\event\\events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/DASH_BOOKING.Models.ApplicationDbContext/True/SqlTable/dbo.EventRequests.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\event\\eventdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\event\\eventdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\accounts\\loginregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\accounts\\loginregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/DASH_BOOKING.Models.ApplicationDbContext/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\migrations\\202405251706004_initialcreate1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\migrations\\202405251706004_initialcreate1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\views\\accounts\\eventlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\accounts\\eventlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\shared\\about_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\shared\\about_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\migrations\\202405251542495_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\migrations\\202405251542495_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\event\\eventdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\event\\eventdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\shared\\panel_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\shared\\panel_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\shared\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\shared\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\assets\\admin_assets\\css\\style.adpanelnav.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\assets\\admin_assets\\css\\style.adpanelnav.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\assets\\admin_assets\\css\\navbar.panel.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\assets\\admin_assets\\css\\navbar.panel.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\assets\\admin_assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\assets\\admin_assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\views\\shared\\panel_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\shared\\panel_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\views\\accounts\\panel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\accounts\\panel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\views\\accounts\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\accounts\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\shared\\eventdetails_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -129,16 +67,46 @@
       "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\shared\\contact_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\assets\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\assets\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\shared\\about_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\shared\\about_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\assets\\styleheader.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\assets\\styleheader.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\shared\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\shared\\header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\attributes\\customauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\attributes\\customauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\dash_booking\\views\\shared\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\shared\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/DASH_BOOKING.Models.ApplicationDbContext/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/DASH_BOOKING.Models.ApplicationDbContext/True/SqlTable/dbo.EventRequests.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\migrations\\202405260649316_addstatustouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\migrations\\202405260649316_addstatustouser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\migrations\\202405260700279_addstatustouser1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\migrations\\202405260700279_addstatustouser1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|c:\\users\\63923\\source\\repos\\dash_booking\\dash_booking\\views\\accounts\\deactivated.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D807612-E7B8-4C38-B212-D87E668C96B3}|DASH_BOOKING\\DASH_BOOKING.csproj|solutionrelative:dash_booking\\views\\accounts\\deactivated.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -148,11 +116,171 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 0,
+              "Title": "EventList.cshtml",
+              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\EventList.cshtml",
+              "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Accounts\\EventList.cshtml",
+              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\EventList.cshtml",
+              "RelativeToolTip": "DASH_BOOKING\\Views\\Accounts\\EventList.cshtml",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAqwGgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T08:14:15.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CustomAuthorizeAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Attributes\\CustomAuthorizeAttribute.cs",
+              "RelativeDocumentMoniker": "DASH_BOOKING\\Attributes\\CustomAuthorizeAttribute.cs",
+              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Attributes\\CustomAuthorizeAttribute.cs",
+              "RelativeToolTip": "DASH_BOOKING\\Attributes\\CustomAuthorizeAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T07:20:33.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "202405260700279_AddStatusToUser1.cs",
+              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Migrations\\202405260700279_AddStatusToUser1.cs",
+              "RelativeDocumentMoniker": "DASH_BOOKING\\Migrations\\202405260700279_AddStatusToUser1.cs",
+              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Migrations\\202405260700279_AddStatusToUser1.cs",
+              "RelativeToolTip": "DASH_BOOKING\\Migrations\\202405260700279_AddStatusToUser1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T07:00:32.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Deactivated.cshtml",
+              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\Deactivated.cshtml",
+              "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Accounts\\Deactivated.cshtml",
+              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\Deactivated.cshtml",
+              "RelativeToolTip": "DASH_BOOKING\\Views\\Accounts\\Deactivated.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T06:55:49.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "202405260649316_AddStatusToUser.cs",
+              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Migrations\\202405260649316_AddStatusToUser.cs",
+              "RelativeDocumentMoniker": "DASH_BOOKING\\Migrations\\202405260649316_AddStatusToUser.cs",
+              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Migrations\\202405260649316_AddStatusToUser.cs",
+              "RelativeToolTip": "DASH_BOOKING\\Migrations\\202405260649316_AddStatusToUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T06:49:37.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DASH_BOOKING\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Models\\User.cs",
+              "RelativeToolTip": "DASH_BOOKING\\Models\\User.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAmwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T06:35:18.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EventController.cs",
+              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "DASH_BOOKING\\Controllers\\EventController.cs",
+              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Controllers\\EventController.cs",
+              "RelativeToolTip": "DASH_BOOKING\\Controllers\\EventController.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAcwFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T06:09:12.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DASH_BOOKING\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DASH_BOOKING\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T06:05:46.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Web.config",
+              "RelativeDocumentMoniker": "DASH_BOOKING\\Web.config",
+              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Web.config",
+              "RelativeToolTip": "DASH_BOOKING\\Web.config",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-26T06:03:46.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserList.cshtml",
+              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\UserList.cshtml",
+              "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Accounts\\UserList.cshtml",
+              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\UserList.cshtml",
+              "RelativeToolTip": "DASH_BOOKING\\Views\\Accounts\\UserList.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T05:55:47.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "DASH_BOOKING\\Controllers\\AccountsController.cs",
+              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "DASH_BOOKING\\Controllers\\AccountsController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwFQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T05:53:39.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Panel_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\Panel_Layout.cshtml",
+              "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Shared\\Panel_Layout.cshtml",
+              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\Panel_Layout.cshtml",
+              "RelativeToolTip": "DASH_BOOKING\\Views\\Shared\\Panel_Layout.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T05:48:19.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "EventDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Event\\EventDetails.cshtml",
               "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Event\\EventDetails.cshtml",
@@ -161,183 +289,39 @@
               "ViewState": "AQIAAA8AAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-24T01:17:34.85Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 23,
               "Title": "dbo.EventRequests [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/DASH_BOOKING.Models.ApplicationDbContext/True/SqlTable/dbo.EventRequests.sql",
               "ToolTip": "dbo.EventRequests [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-25T17:24:35.635Z",
+              "WhenOpened": "2024-05-26T05:40:23.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "202405251706004_InitialCreate1.cs",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Migrations\\202405251706004_InitialCreate1.cs",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Migrations\\202405251706004_InitialCreate1.cs",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Migrations\\202405251706004_InitialCreate1.cs",
-              "RelativeToolTip": "DASH_BOOKING\\Migrations\\202405251706004_InitialCreate1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T17:06:05.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "dbo.Users [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/DASH_BOOKING.Models.ApplicationDbContext/True/SqlTable/dbo.Users.sql",
-              "ToolTip": "dbo.Users [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-25T15:51:52.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "202405251542495_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Migrations\\202405251542495_InitialCreate.cs",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Migrations\\202405251542495_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Migrations\\202405251542495_InitialCreate.cs",
-              "RelativeToolTip": "DASH_BOOKING\\Migrations\\202405251542495_InitialCreate.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAgwEAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T15:42:53.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Migrations\\Configuration.cs",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Migrations\\Configuration.cs",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Migrations\\Configuration.cs",
-              "RelativeToolTip": "DASH_BOOKING\\Migrations\\Configuration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T15:41:05.153Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Models\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Models\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Models\\ApplicationDbContext.cs",
-              "RelativeToolTip": "DASH_BOOKING\\Models\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T15:04:10.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EventList.cshtml",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\EventList.cshtml",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Accounts\\EventList.cshtml",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\EventList.cshtml",
-              "RelativeToolTip": "DASH_BOOKING\\Views\\Accounts\\EventList.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAADwAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T00:41:23.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserList.cshtml",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\UserList.cshtml",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Accounts\\UserList.cshtml",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\UserList.cshtml",
-              "RelativeToolTip": "DASH_BOOKING\\Views\\Accounts\\UserList.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T00:40:54.688Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\assets\\admin_assets\\css\\style.css",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\assets\\admin_assets\\css\\style.css",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\assets\\admin_assets\\css\\style.css",
-              "RelativeToolTip": "DASH_BOOKING\\assets\\admin_assets\\css\\style.css",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAA4AAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-24T16:58:37.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Navbar.panel.scss",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\assets\\admin_assets\\css\\Navbar.panel.scss",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\assets\\admin_assets\\css\\Navbar.panel.scss",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\assets\\admin_assets\\css\\Navbar.panel.scss",
-              "RelativeToolTip": "DASH_BOOKING\\assets\\admin_assets\\css\\Navbar.panel.scss",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAkwHcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
-              "WhenOpened": "2024-05-24T16:57:01.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "style.adpanelnav.css",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\assets\\admin_assets\\css\\style.adpanelnav.css",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\assets\\admin_assets\\css\\style.adpanelnav.css",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\assets\\admin_assets\\css\\style.adpanelnav.css",
-              "RelativeToolTip": "DASH_BOOKING\\assets\\admin_assets\\css\\style.adpanelnav.css",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAJUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-24T16:42:27.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Panel_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\Panel_Layout.cshtml",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Shared\\Panel_Layout.cshtml",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\Panel_Layout.cshtml",
-              "RelativeToolTip": "DASH_BOOKING\\Views\\Shared\\Panel_Layout.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAADwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T15:47:42.226Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "Panel.cshtml",
               "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\Panel.cshtml",
               "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Accounts\\Panel.cshtml",
               "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\Panel.cshtml",
               "RelativeToolTip": "DASH_BOOKING\\Views\\Accounts\\Panel.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAAAAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAuwDsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-24T15:23:07.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EventController.cs",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Controllers\\EventController.cs",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Controllers\\EventController.cs",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Controllers\\EventController.cs",
-              "RelativeToolTip": "DASH_BOOKING\\Controllers\\EventController.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAqwE0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T01:11:20.296Z",
+              "DocumentIndex": 22,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/DASH_BOOKING.Models.ApplicationDbContext/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-25T15:51:52.679Z",
               "EditorCaption": ""
             },
             {
@@ -355,93 +339,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 17,
               "Title": "Header.cshtml",
               "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\Header.cshtml",
               "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Shared\\Header.cshtml",
               "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\Header.cshtml",
               "RelativeToolTip": "DASH_BOOKING\\Views\\Shared\\Header.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACsAAAA9AAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAABgAAABfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T03:08:55.99Z"
+              "WhenOpened": "2024-05-24T03:08:55.99Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 15,
               "Title": "Contact_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\Contact_Layout.cshtml",
               "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Shared\\Contact_Layout.cshtml",
               "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\Contact_Layout.cshtml",
               "RelativeToolTip": "DASH_BOOKING\\Views\\Shared\\Contact_Layout.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAD8AAAAiAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAAKkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T00:39:51.15Z"
+              "WhenOpened": "2024-05-24T00:39:51.15Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 14,
               "Title": "Event_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\Event_Layout.cshtml",
               "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Shared\\Event_Layout.cshtml",
               "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\Event_Layout.cshtml",
               "RelativeToolTip": "DASH_BOOKING\\Views\\Shared\\Event_Layout.cshtml",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAAD8AAAAiAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAAKkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T00:09:00.572Z"
+              "WhenOpened": "2024-05-24T00:09:00.572Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 13,
               "Title": "EventDetails_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\EventDetails_Layout.cshtml",
               "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Shared\\EventDetails_Layout.cshtml",
               "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\EventDetails_Layout.cshtml",
               "RelativeToolTip": "DASH_BOOKING\\Views\\Shared\\EventDetails_Layout.cshtml",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAswCwAAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T01:27:08.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Web.config",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Web.config",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Web.config",
-              "RelativeToolTip": "DASH_BOOKING\\Views\\Web.config",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC0AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-24T05:10:08.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EventModel.cs",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Models\\EventModel.cs",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Models\\EventModel.cs",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Models\\EventModel.cs",
-              "RelativeToolTip": "DASH_BOOKING\\Models\\EventModel.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAuwCgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T01:38:43.085Z",
+              "WhenOpened": "2024-05-24T01:27:08.903Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
               "Title": "LoginRegister.cshtml",
               "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\LoginRegister.cshtml",
               "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Accounts\\LoginRegister.cshtml",
               "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Accounts\\LoginRegister.cshtml",
               "RelativeToolTip": "DASH_BOOKING\\Views\\Accounts\\LoginRegister.cshtml",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAkwIEAAAAAAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAuwHgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-24T01:52:21.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 7,
               "Title": "About.cshtml",
               "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Home\\About.cshtml",
@@ -449,87 +412,38 @@
               "RelativeToolTip": "DASH_BOOKING\\Views\\Home\\About.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T16:31:11.643Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "DASH_BOOKING\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T16:09:13.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EventRequest.cs",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Models\\EventRequest.cs",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Models\\EventRequest.cs",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Models\\EventRequest.cs",
-              "RelativeToolTip": "DASH_BOOKING\\Models\\EventRequest.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAwwB0AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T00:29:44.24Z",
+              "WhenOpened": "2024-05-23T16:31:11.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "DASH_BOOKING\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T16:09:43.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "About_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\About_Layout.cshtml",
               "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Shared\\About_Layout.cshtml",
               "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\About_Layout.cshtml",
               "RelativeToolTip": "DASH_BOOKING\\Views\\Shared\\About_Layout.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAD4AAAAiAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAAK8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-23T16:31:58.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "DASH_BOOKING\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-23T16:06:28.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\assets\\style.css",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\assets\\style.css",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\assets\\style.css",
-              "RelativeToolTip": "DASH_BOOKING\\assets\\style.css",
-              "ViewState": "AQIAAF8BAAAAAAAAAAApwG0BAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-24T02:27:09.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Events.cshtml",
               "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Event\\Events.cshtml",
               "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Event\\Events.cshtml",
@@ -542,45 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountsController.cs",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Controllers\\AccountsController.cs",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Controllers\\AccountsController.cs",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Controllers\\AccountsController.cs",
-              "RelativeToolTip": "DASH_BOOKING\\Controllers\\AccountsController.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAgwBYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T01:51:46.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Models\\User.cs",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Models\\User.cs",
-              "RelativeToolTip": "DASH_BOOKING\\Models\\User.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwCkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T04:42:07.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "styleheader.css",
-              "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\assets\\styleheader.css",
-              "RelativeDocumentMoniker": "DASH_BOOKING\\assets\\styleheader.css",
-              "ToolTip": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\assets\\styleheader.css",
-              "RelativeToolTip": "DASH_BOOKING\\assets\\styleheader.css",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-24T04:29:43.724Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 20,
               "Title": "Footer.cshtml",
               "DocumentMoniker": "C:\\Users\\63923\\source\\repos\\DASH_BOOKING\\DASH_BOOKING\\Views\\Shared\\Footer.cshtml",
               "RelativeDocumentMoniker": "DASH_BOOKING\\Views\\Shared\\Footer.cshtml",
@@ -588,7 +464,8 @@
               "RelativeToolTip": "DASH_BOOKING\\Views\\Shared\\Footer.cshtml",
               "ViewState": "AQIAAGMAAAAAAAAAAAAAAHIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T03:09:47.196Z"
+              "WhenOpened": "2024-05-24T03:09:47.196Z",
+              "EditorCaption": ""
             }
           ]
         }

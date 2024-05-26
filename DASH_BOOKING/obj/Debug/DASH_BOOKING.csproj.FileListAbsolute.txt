@@ -1,5 +1,3 @@
-C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.csproj.AssemblyReference.cache
-C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.csproj.CoreCompileInputs.cache
 C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\bin\DASH_BOOKING.dll.config
 C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\bin\DASH_BOOKING.dll
 C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\bin\DASH_BOOKING.pdb
@@ -78,9 +76,15 @@ C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\bin\System.Web.WebPages.Ra
 C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\bin\Newtonsoft.Json.xml
 C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\bin\Antlr3.Runtime.pdb
 C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.csproj.AssemblyReference.cache
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.InitialCreate.resources
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.InitialCreate1.resources
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.AddStatusToEventRequest.resources
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.UpdateEventRequestStatus.resources
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.csproj.GenerateResource.cache
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.csproj.CoreCompileInputs.cache
 C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOO.C8327DF3.Up2Date
 C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.dll
 C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.pdb
-C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.InitialCreate.resources
-C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.csproj.GenerateResource.cache
-C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.InitialCreate1.resources
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.AddStatusToUser.resources
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.AddStatusToUser1.resources

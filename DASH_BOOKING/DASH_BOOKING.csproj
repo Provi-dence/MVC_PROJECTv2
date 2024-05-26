@@ -127,6 +127,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Attributes\CustomAuthorizeAttribute.cs" />
     <Compile Include="Controllers\AccountsController.cs" />
     <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -140,6 +141,22 @@
     <Compile Include="Migrations\202405251706004_InitialCreate1.cs" />
     <Compile Include="Migrations\202405251706004_InitialCreate1.Designer.cs">
       <DependentUpon>202405251706004_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405260516042_AddStatusToEventRequest.cs" />
+    <Compile Include="Migrations\202405260516042_AddStatusToEventRequest.Designer.cs">
+      <DependentUpon>202405260516042_AddStatusToEventRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405260538398_UpdateEventRequestStatus.cs" />
+    <Compile Include="Migrations\202405260538398_UpdateEventRequestStatus.Designer.cs">
+      <DependentUpon>202405260538398_UpdateEventRequestStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405260649316_AddStatusToUser.cs" />
+    <Compile Include="Migrations\202405260649316_AddStatusToUser.Designer.cs">
+      <DependentUpon>202405260649316_AddStatusToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405260700279_AddStatusToUser1.cs" />
+    <Compile Include="Migrations\202405260700279_AddStatusToUser1.Designer.cs">
+      <DependentUpon>202405260700279_AddStatusToUser1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -520,6 +537,7 @@
     <Content Include="Views\Shared\Panel_Layout.cshtml" />
     <Content Include="Views\Accounts\UserList.cshtml" />
     <Content Include="Views\Accounts\EventList.cshtml" />
+    <Content Include="Views\Accounts\Deactivated.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -558,6 +576,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405251706004_InitialCreate1.resx">
       <DependentUpon>202405251706004_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405260516042_AddStatusToEventRequest.resx">
+      <DependentUpon>202405260516042_AddStatusToEventRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405260538398_UpdateEventRequestStatus.resx">
+      <DependentUpon>202405260538398_UpdateEventRequestStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405260649316_AddStatusToUser.resx">
+      <DependentUpon>202405260649316_AddStatusToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405260700279_AddStatusToUser1.resx">
+      <DependentUpon>202405260700279_AddStatusToUser1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

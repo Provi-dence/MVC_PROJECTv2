@@ -46,7 +46,6 @@ namespace DASH_BOOKING.Controllers
         }
 
         // POST: Event/CreateEvent
-        // POST: Event/CreateEvent
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult CreateEvent(EventRequest eventRequest)
@@ -55,6 +54,9 @@ namespace DASH_BOOKING.Controllers
             {
                 try
                 {
+                    // Ensure the status is set to "Pending"
+                    eventRequest.Status = "Pending";
+
                     // Save event request to database or perform other actions
                     db.EventRequests.Add(eventRequest);
                     db.SaveChanges();
@@ -85,5 +87,7 @@ namespace DASH_BOOKING.Controllers
             }
             base.Dispose(disposing);
         }
+
+
     }
 }

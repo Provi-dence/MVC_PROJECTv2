@@ -67,7 +67,7 @@
                         @using (Html.BeginForm("Register", "Accounts", FormMethod.Post))
                         {
                             @Html.AntiForgeryToken()
-                            <input type="text" name="UserName" placeholder="User" class="custom-input" required />
+                            <input type="text" name="UserName" placeholder="Full name" class="custom-input" required />
                             <input type="email" name="Email" placeholder="Email" class="custom-input" required />
                             <input type="password" name="Password" placeholder="Password" class="custom-input" required />
                             <input type="password" name="ConfirmPassword" placeholder="Confirm Password" class="custom-input" required />

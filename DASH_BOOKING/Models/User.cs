@@ -25,6 +25,8 @@ namespace DASH_BOOKING.Models
 
         public DateTime CreatedAt { get; set; }
 
+        public string Status { get; set; } = "Active"; // Default status
+ 
         public User()
         {
             CreatedAt = DateTime.Now;
