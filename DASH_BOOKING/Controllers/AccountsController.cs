@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 using DASH_BOOKING.Models;
+using System.IO;
+using System.Data.Entity;
 
 namespace DASH_BOOKING.Controllers
 {
@@ -19,6 +22,50 @@ namespace DASH_BOOKING.Controllers
         public ActionResult Deactivated()
         {
             return View();
+        }
+
+        // GET: Event/Add
+        public ActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AddEvent(EventModel eventModel, HttpPostedFileBase[] imageFiles)
+        {
+            if (ModelState.IsValid)
+            {
+                if (imageFiles != null && imageFiles.Length > 0)
+                {
+                    eventModel.Images = new List<EventImage>();
+                    foreach (var file in imageFiles)
+                    {
+                        if (file != null && file.ContentLength > 0)
+                        {
+                            var image = new EventImage
+                            {
+                                Image = SaveImage(file)
+                            };
+                            eventModel.Images.Add(image);
+                        }
+                    }
+                }
+
+                db.EventModels.Add(eventModel);
+                db.SaveChanges();
+                return RedirectToAction("EventList");
+            }
+
+            return View(eventModel);
+        }
+
+        private string SaveImage(HttpPostedFileBase file)
+        {
+            string fileName = Path.GetFileName(file.FileName);
+            string filePath = Path.Combine(Server.MapPath("~/Upload pictures/"), fileName); // Update the folder path if needed
+            file.SaveAs(filePath);
+            return "~/Upload pictures/" + fileName;
         }
 
 
@@ -49,7 +96,6 @@ namespace DASH_BOOKING.Controllers
         public ActionResult UserList()
         {
             List<User> users = db.Users.ToList();  // Fetch users from the database
-                                                   
             System.Diagnostics.Debug.WriteLine("Users Count: " + users.Count);  // Debugging: Check if users are being retrieved
             return View(users);  // Pass the list of users to the view
         }
@@ -140,8 +186,6 @@ namespace DASH_BOOKING.Controllers
             return RedirectToAction("UserList");
         }
 
-
-
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -150,5 +194,80 @@ namespace DASH_BOOKING.Controllers
             }
             base.Dispose(disposing);
         }
+
+        // Event List Edit & Delete function
+        // GET: Event/Edit
+        public ActionResult Edit(int id)
+        {
+            var eventModel = db.EventModels.Find(id);
+            if (eventModel == null)
+            {
+                return HttpNotFound(); // Handle not found case
+            }
+            return View(eventModel);
+        }
+
+        // POST: Event/Edit
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(EventModel eventModel, HttpPostedFileBase[] imageFiles)
+        {
+            if (ModelState.IsValid)
+            {
+                // Update the event model properties
+                db.Entry(eventModel).State = EntityState.Modified;
+
+                // Handle image file updates if needed
+                if (imageFiles != null && imageFiles.Length > 0)
+                {
+                    // Remove existing images
+                    eventModel.Images.Clear();
+
+                    // Add new images
+                    foreach (var file in imageFiles)
+                    {
+                        if (file != null && file.ContentLength > 0)
+                        {
+                            var image = new EventImage
+                            {
+                                Image = SaveImage(file)
+                            };
+                            eventModel.Images.Add(image);
+                        }
+                    }
+                }
+
+                db.SaveChanges();
+                return RedirectToAction("EventList");
+            }
+
+            return View(eventModel);
+        }
+
+        // GET: Event/Delete
+        public ActionResult Delete(int id)
+        {
+            var eventModel = db.EventModels.Find(id);
+            if (eventModel == null)
+            {
+                return HttpNotFound(); // Handle not found case
+            }
+            return View(eventModel);
+        }
+
+        // POST: Event/Delete
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            var eventModel = db.EventModels.Find(id);
+            if (eventModel != null)
+            {
+                db.EventModels.Remove(eventModel);
+                db.SaveChanges();
+            }
+            return RedirectToAction("EventList");
+        }
+
     }
 }

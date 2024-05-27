@@ -1,0 +1,129 @@
+﻿@model DASH_BOOKING.Models.EventModel
+
+@{
+    ViewBag.Title = "Add Event";
+    Layout = "~/Views/Shared/Panel_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="card-title mb-0">Add Event</h4>
+                </div>
+                <div class="card-body">
+                    @using (Html.BeginForm("AddEvent", "Accounts", FormMethod.Post, new { enctype = "multipart/form-data", @class = "needs-validation", novalidate = "novalidate" }))
+                    {
+                        <div class="row">
+                            <div class="col-5 mr-5">
+                                @Html.AntiForgeryToken()
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.EventName, htmlAttributes: new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.EventName, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.EventName, "", new { @class = "text-danger" })
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.EventDate, htmlAttributes: new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.EventDate, new { htmlAttributes = new { @class = "form-control", @type = "date", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.EventDate, "", new { @class = "text-danger" })
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.EventTime, htmlAttributes: new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.EventTime, new { htmlAttributes = new { @class = "form-control", @type = "time", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.EventTime, "", new { @class = "text-danger" })
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Location, htmlAttributes: new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "form-label" })
+                                    @Html.TextAreaFor(model => model.Description, new { @class = "form-control", rows = 5, @required = "required" })
+                                    @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <!-- Add Organizer's Email Field -->
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.OrganizerEmail, htmlAttributes: new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.OrganizerEmail, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.OrganizerEmail, "", new { @class = "text-danger" })
+                                </div>
+
+                                <!-- Add Organizer's Number Field -->
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.OrganizerPhone, htmlAttributes: new { @class = "form-label" })
+                                    @Html.EditorFor(model => model.OrganizerPhone, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                                    @Html.ValidationMessageFor(model => model.OrganizerPhone, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="col-5">
+                                    <img id="previewImage" src="" style="width: 200px;" />
+                                    <!-- Add an element for image previews -->
+                                    <div id="previewImagesContainer"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            @Html.Label("Event Images", htmlAttributes: new { @class = "form-label" })
+                            <div class="custom-file">
+                                <input type="file" name="imageFiles" multiple class="custom-file-input" id="customFile" required onchange="previewImages(event)">
+                                <label class="custom-file-label" for="customFile">Choose file...</label>
+                                <div class="invalid-feedback">Please select at least one image.</div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Add Event</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+        // Update custom file input label to show selected file names
+        document.querySelector('.custom-file-input').addEventListener('change', function (e) {
+            var fileName = e.target.files[0].name;
+            var nextSibling = e.target.nextElementSibling;
+            nextSibling.innerText = fileName;
+        });
+
+        function previewImages(event) {
+            var files = event.target.files;
+            var imagesContainer = document.getElementById('previewImagesContainer');
+            imagesContainer.innerHTML = ''; // Clear previous previews
+            for (var i = 0; i < files.length; i++) {
+                var file = files[i];
+                var reader = new FileReader();
+                reader.onload = (function (file) {
+                    return function (e) {
+                        var img = document.createElement('img');
+                        img.src = e.target.result;
+                        img.style.width = '250px'; // Adjust image size as needed
+                        imagesContainer.appendChild(img);
+                    };
+                })(file);
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+}
+
+
+<!-- Your HTML code continues below... -->

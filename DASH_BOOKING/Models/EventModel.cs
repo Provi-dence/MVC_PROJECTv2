@@ -13,6 +13,9 @@ namespace DASH_BOOKING.Models
 
         public DateTime EventDate { get; set; }
 
+        [Display(Name = "Event Time")]
+        [DataType(DataType.Time)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:HH:mm}")]
         public DateTime EventTime { get; set; }
 
         public string Description { get; set; }
@@ -24,6 +27,9 @@ namespace DASH_BOOKING.Models
         public string OrganizerPhone { get; set; }
 
         public virtual List<EventImage> Images { get; set; }
+
+        public string Status { get; set; }
+
     }
 
     public class EventImage

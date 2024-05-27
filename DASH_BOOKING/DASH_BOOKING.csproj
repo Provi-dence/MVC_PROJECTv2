@@ -158,6 +158,10 @@
     <Compile Include="Migrations\202405260700279_AddStatusToUser1.Designer.cs">
       <DependentUpon>202405260700279_AddStatusToUser1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202405270625105_UpdateEventTime.cs" />
+    <Compile Include="Migrations\202405270625105_UpdateEventTime.Designer.cs">
+      <DependentUpon>202405270625105_UpdateEventTime.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\EventModel.cs" />
@@ -538,6 +542,7 @@
     <Content Include="Views\Accounts\UserList.cshtml" />
     <Content Include="Views\Accounts\EventList.cshtml" />
     <Content Include="Views\Accounts\Deactivated.cshtml" />
+    <Content Include="Views\Accounts\Add.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -588,6 +593,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405260700279_AddStatusToUser1.resx">
       <DependentUpon>202405260700279_AddStatusToUser1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405270625105_UpdateEventTime.resx">
+      <DependentUpon>202405270625105_UpdateEventTime.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

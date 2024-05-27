@@ -1,29 +1,29 @@
-﻿using System.Data.Entity;
+﻿    using System.Data.Entity;
 
-namespace DASH_BOOKING.Models
-{
-    public class ApplicationDbContext : DbContext
+    namespace DASH_BOOKING.Models
     {
-        public DbSet<User> Users { get; set; }
-        public DbSet<Admin> Admins { get; set; }
-        public DbSet<EventRequest> EventRequests { get; set; }
-        public DbSet<EventModel> EventModels { get; set; }
-        public DbSet<EventImage> EventImages { get; set; }
-
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        public class ApplicationDbContext : DbContext
         {
-            base.OnModelCreating(modelBuilder);
+            public DbSet<User> Users { get; set; }
+            public DbSet<Admin> Admins { get; set; }
+            public DbSet<EventRequest> EventRequests { get; set; }
+            public DbSet<EventModel> EventModels { get; set; }
+            public DbSet<EventImage> EventImages { get; set; }
 
-            // Configuring TPH inheritance for User and Admin
-            modelBuilder.Entity<User>()
-                .Map<Admin>(m => m.Requires("Discriminator").HasValue("Admin"));
+            protected override void OnModelCreating(DbModelBuilder modelBuilder)
+            {
+                base.OnModelCreating(modelBuilder);
 
-            // Configuring the one-to-many relationship between EventModel and EventImages
-            modelBuilder.Entity<EventImage>()
-                .HasRequired(e => e.EventModel)
-                .WithMany(e => e.Images)
-                .HasForeignKey(e => e.EventModelId)
-                .WillCascadeOnDelete(true);
+                // Configuring TPH inheritance for User and Admin
+                modelBuilder.Entity<User>()
+                    .Map<Admin>(m => m.Requires("Discriminator").HasValue("Admin"));
+
+                // Configuring the one-to-many relationship between EventModel and EventImages
+                modelBuilder.Entity<EventImage>()
+                    .HasRequired(e => e.EventModel)
+                    .WithMany(e => e.Images)
+                    .HasForeignKey(e => e.EventModelId)
+                    .WillCascadeOnDelete(true);
+            }
         }
     }
-}
