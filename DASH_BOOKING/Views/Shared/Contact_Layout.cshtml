@@ -10,13 +10,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Contact - Moderna Bootstrap Template</title>
+    <title>Contact - Event Request</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="@Url.Content("~/assets/img/favicon.png")" rel="icon">
-    <link href="@Url.Content("~/assets/img/apple-touch-icon.png")" rel="apple-touch-icon">
+    <link href="@Url.Content("~/images/logonamo.png")" rel="icon">
+    <link href="@Url.Content("~/images/logonamo.png")" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
         <div class="container d-flex justify-content-between align-items-center">
 
             <div class="logo">
-                <h1 class="text-light"><a href="@Url.Action("Index", "Home")"><span>Moderna</span></a></h1>
+                <h1 class="text-light"><a href="@Url.Action("Index", "Home")"><span>DASH-BOOKING</span></a></h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="@Url.Action("Index", "Home")"><img src="@Url.Content("~/assets/img/logo.png")" alt="" class="img-fluid"></a>-->
             </div>
@@ -49,22 +49,15 @@
                     <li><a class="active" href="@Url.Action("Index", "Home")">Home</a></li>
                     <li><a href="@Url.Action("About", "Home")">About</a></li>
                     <li><a href="@Url.Action("Events", "Event")">Events</a></li>
-                    <li><a href="@Url.Action("Team", "Home")">Team</a></li>
-                    <li><a href="@Url.Action("Blog", "Home")">Blog</a></li>
-                    <li class="dropdown">
-                        <a href="#"><span>Account</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="@Url.Action("LoginRegister", "Accounts")">Login</a></li>
-                            <li><a href="@Url.Action("LoginRegister", "Accounts")">Register</a></li>
-                        </ul>
-                    </li>
                     <li><a href="@Url.Action("Contact", "Home")">Contact Us</a></li>
+                    <li><a href="@Url.Action("LoginRegister", "Accounts")">Logout</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
 
         </div>
     </header><!-- End Header -->
+
     <div>
         @RenderBody()
     </div>
@@ -98,15 +91,6 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Event Categories</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Running events</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Biking events</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Swimming events</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Ultra Marathon events</a></li>
-                        </ul>
-                    </div>
 
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact Us</h4>

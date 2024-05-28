@@ -10,8 +10,11 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="@Url.Content("~/images")" rel="icon">
-    <!--<link href="@Url.Content("~/assets/img/apple-touch-icon.png")" rel="apple-touch-icon">-->
+    <!-- Favicons -->
+    <link href="@Url.Content("~/images/logonamo.png")" rel="icon">
+    <link href="@Url.Content("~/images/logonamo.png")" rel="apple-touch-icon">
+
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
 
@@ -43,16 +46,8 @@
                     <li><a class="active" href="@Url.Action("Index", "Home")">Home</a></li>
                     <li><a href="@Url.Action("About", "Home")">About</a></li>
                     <li><a href="@Url.Action("Events", "Event")">Events</a></li>
-                    <li><a href="@Url.Action("Team", "Home")">Team</a></li>
-                    <li><a href="@Url.Action("Blog", "Home")">Blog</a></li>
-                    <li class="dropdown">
-                        <a href="#"><span>Account</span> <i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="@Url.Action("LoginRegister", "Accounts")">Login</a></li>
-                            <li><a href="@Url.Action("LoginRegister", "Accounts")">Register</a></li>
-                        </ul>
-                    </li>
                     <li><a href="@Url.Action("Contact", "Home")">Contact Us</a></li>
+                    <li><a href="@Url.Action("LoginRegister", "Accounts")">Logout</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->

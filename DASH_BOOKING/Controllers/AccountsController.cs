@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using DASH_BOOKING.Models;
 using System.IO;
 using System.Data.Entity;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace DASH_BOOKING.Controllers
 {
@@ -36,6 +38,17 @@ namespace DASH_BOOKING.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Check if the event already exists based on EventName and EventDate
+                bool eventExists = db.EventModels.Any(e =>
+                    e.EventName.Equals(eventModel.EventName, StringComparison.OrdinalIgnoreCase) &&
+                    e.EventDate.Date == eventModel.EventDate.Date);
+
+                if (eventExists)
+                {
+                    ModelState.AddModelError("", "Event with the same name and date already exists.");
+                    return View(eventModel); // Return to the form with validation error
+                }
+
                 if (imageFiles != null && imageFiles.Length > 0)
                 {
                     eventModel.Images = new List<EventImage>();
@@ -52,13 +65,22 @@ namespace DASH_BOOKING.Controllers
                     }
                 }
 
+                // Ensure the event category is not empty
+                if (string.IsNullOrWhiteSpace(eventModel.EventCategory))
+                {
+                    ModelState.AddModelError("", "Event category is required.");
+                    return View(eventModel); // Return to the form with validation error
+                }
+
                 db.EventModels.Add(eventModel);
                 db.SaveChanges();
                 return RedirectToAction("EventList");
             }
 
-            return View(eventModel);
+            return View(eventModel); // Return to the form with model errors
         }
+
+
 
         private string SaveImage(HttpPostedFileBase file)
         {
@@ -67,6 +89,7 @@ namespace DASH_BOOKING.Controllers
             file.SaveAs(filePath);
             return "~/Upload pictures/" + fileName;
         }
+
 
 
         public ActionResult Panel()
@@ -100,6 +123,8 @@ namespace DASH_BOOKING.Controllers
             return View(users);  // Pass the list of users to the view
         }
 
+
+        // POST: Accounts/Login
         // POST: Accounts/Login
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -107,30 +132,73 @@ namespace DASH_BOOKING.Controllers
         {
             if (ModelState.IsValid)
             {
-                var existingUser = db.Users.FirstOrDefault(u => u.Email == Email && u.Password == Password);
-                if (existingUser != null)
+                if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
                 {
-                    if (existingUser.Status == "Inactive")
-                    {
-                        return RedirectToAction("Deactivated", "Accounts");
-                    }
+                    ModelState.AddModelError("", "Email and Password are required.");
+                    return View("LoginRegister");
+                }
 
-                    if (existingUser.Role == "Admin")
+                try
+                {
+                    // Case-insensitive comparison of email
+                    var existingUser = db.Users.FirstOrDefault(u => u.Email.Equals(Email, StringComparison.OrdinalIgnoreCase));
+
+                    if (existingUser != null)
                     {
-                        return RedirectToAction("Panel", "Accounts");
+                        bool passwordMatches = false;
+                        string hashedPassword = PasswordHasher.HashPassword(Password);
+
+                        // Check if the existing password is already hashed
+                        if (existingUser.Password == hashedPassword)
+                        {
+                            passwordMatches = true;
+                        }
+                        // Check if the existing password is plain text and matches the entered password
+                        else if (existingUser.Password == Password)
+                        {
+                            passwordMatches = true;
+
+                            // Update the password to the hashed version
+                            existingUser.Password = hashedPassword;
+                            db.SaveChanges();
+                        }
+
+                        if (passwordMatches)
+                        {
+                            if (existingUser.Status == "Inactive")
+                            {
+                                return RedirectToAction("Deactivated", "Accounts");
+                            }
+
+                            if (existingUser.Role == "Admin")
+                            {
+                                return RedirectToAction("Panel", "Accounts");
+                            }
+                            else
+                            {
+                                return RedirectToAction("Index", "Home");
+                            }
+                        }
+                        else
+                        {
+                            ModelState.AddModelError("", "Invalid login attempt.");
+                        }
                     }
                     else
                     {
-                        return RedirectToAction("Index", "Home");
+                        ModelState.AddModelError("", "Invalid login attempt.");
                     }
                 }
-                else
+                catch (Exception ex)
                 {
-                    ModelState.AddModelError("", "Invalid login attempt.");
+                    // Log the exception details
+                    System.Diagnostics.Debug.WriteLine("Error during login: " + ex.Message);
+                    ModelState.AddModelError("", "An error occurred while processing your request.");
                 }
             }
             return View("LoginRegister");
         }
+
 
 
         // POST: Accounts/Register
@@ -142,12 +210,16 @@ namespace DASH_BOOKING.Controllers
             {
                 if (Password == ConfirmPassword)
                 {
+                    // Hash the password before saving
+                    string hashedPassword = PasswordHasher.HashPassword(Password);
+
                     var user = new User
                     {
                         UserName = UserName,
                         Email = Email,
-                        Password = Password,
-                        Role = "User"  // Assign the default role as User
+                        Password = hashedPassword, // Save the hashed password
+                        IsPasswordHashed = true,   // Set the flag to true
+                        Role = "User"
                     };
                     db.Users.Add(user);
                     db.SaveChanges();
@@ -160,6 +232,8 @@ namespace DASH_BOOKING.Controllers
             }
             return View("LoginRegister");
         }
+
+
 
         public ActionResult DeleteUser(int id)
         {
@@ -207,67 +281,40 @@ namespace DASH_BOOKING.Controllers
             return View(eventModel);
         }
 
-        // POST: Event/Edit
+
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(EventModel eventModel, HttpPostedFileBase[] imageFiles)
-        {
-            if (ModelState.IsValid)
-            {
-                // Update the event model properties
-                db.Entry(eventModel).State = EntityState.Modified;
-
-                // Handle image file updates if needed
-                if (imageFiles != null && imageFiles.Length > 0)
-                {
-                    // Remove existing images
-                    eventModel.Images.Clear();
-
-                    // Add new images
-                    foreach (var file in imageFiles)
-                    {
-                        if (file != null && file.ContentLength > 0)
-                        {
-                            var image = new EventImage
-                            {
-                                Image = SaveImage(file)
-                            };
-                            eventModel.Images.Add(image);
-                        }
-                    }
-                }
-
-                db.SaveChanges();
-                return RedirectToAction("EventList");
-            }
-
-            return View(eventModel);
-        }
-
-        // GET: Event/Delete
-        public ActionResult Delete(int id)
+        public JsonResult Delete(int id)
         {
             var eventModel = db.EventModels.Find(id);
             if (eventModel == null)
             {
-                return HttpNotFound(); // Handle not found case
+                return Json(new { success = false, message = "Event not found" });
             }
-            return View(eventModel);
-        }
 
-        // POST: Event/Delete
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            var eventModel = db.EventModels.Find(id);
-            if (eventModel != null)
-            {
-                db.EventModels.Remove(eventModel);
-                db.SaveChanges();
-            }
-            return RedirectToAction("EventList");
+            db.EventModels.Remove(eventModel);
+            db.SaveChanges();
+
+            return Json(new { success = true });
         }
 
     }
+
+    public static class PasswordHasher
+    {
+        public static string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
+    }
+
+
 }

@@ -1,0 +1,86 @@
+﻿@{
+    Layout = null;
+}
+
+@model DASH_BOOKING.Models.EventModel
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Ticket</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .ticket-container {
+            max-width: 500px;
+            margin: 50px auto;
+        }
+
+        .ticket-card {
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .ticket-header {
+            background-color: #007bff;
+            color: #fff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 20px;
+        }
+
+        .ticket-body {
+            padding: 20px;
+        }
+
+        .ticket-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .ticket-info {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .thank-you {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ticket-container">
+        <div class="card ticket-card">
+            <div class="card-header ticket-header">
+                <h4 class="card-title text-center">Event Ticket</h4>
+            </div>
+            <div class="card-body ticket-body">
+                <h5 class="card-title ticket-title">@Model.EventName</h5>
+                <p class="ticket-info">Event Date: @Model.EventDate.ToShortDateString()</p>
+                <!-- Add more ticket details as needed -->
+                <!-- Thank You message -->
+                <hr />
+                <p class="thank-you">Thank you for joining the event!</p>
+                <!-- Inside your ticket generation view (GenerateTicket.cshtml) -->
+                <p class="ticket-info">Reference Number: @ViewBag.ReferenceNumber</p>
+
+                <!-- Button to redirect to Event.cshtml -->
+                <div class="text-center">
+                    <a href="@Url.Action("Events", "Event")" class="btn btn-primary">Back to Events</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

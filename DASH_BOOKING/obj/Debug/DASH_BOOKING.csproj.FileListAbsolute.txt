@@ -89,3 +89,7 @@ C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.pdb
 C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.AddStatusToUser.resources
 C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.AddStatusToUser1.resources
 C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.UpdateEventTime.resources
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.UpdateUserSchema.resources
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.UpdateUserModel.resources
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.AddIsPasswordHashedToUsers.resources
+C:\Users\63923\source\repos\DASH_BOOKING\DASH_BOOKING\obj\Debug\DASH_BOOKING.Migrations.AddEventCategoryToEventModel.resources

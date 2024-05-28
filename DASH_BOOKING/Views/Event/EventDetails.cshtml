@@ -1,10 +1,22 @@
-﻿
+﻿@model DASH_BOOKING.Models.EventModel
+
 @{
     ViewBag.Title = "EventDetails";
     Layout = "~/Views/Shared/EventDetails_Layout.cshtml";
 }
 
+<style>
+    .swiper-slide img {
+        max-width: 100%;
+        height: auto;
+        display: block; /* Ensures the image is displayed as a block element */
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+</style>
 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
 
 <main id="main">
@@ -18,7 +30,7 @@
                             @foreach (var image in Model.Images)
                             {
                                 <div class="swiper-slide">
-                                    <img src="@Url.Content(image)" alt="">
+                                    <img src="@Url.Content(image.Image)" alt="">
                                 </div>
                             }
                         </div>
@@ -44,8 +56,50 @@
                         <h2>@Model.EventName</h2>
                         <p>@Model.Description</p>
                     </div>
+                    <div class="event-info">
+                        <h3>Event Information</h3>
+                        <!-- Existing event details code here -->
+                        <!-- Button to join event -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#joinEventModal">Join Event</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+
                 </div>
             </div>
         </div>
     </section><!-- End Event Details Section -->
 </main><!-- End #main -->
+<!-- Modal HTML -->
+<div class="modal fade" id="joinEventModal" tabindex="-1" role="dialog" aria-labelledby="joinEventModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="joinEventModalLabel">Confirm Event Participation</h5>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to join this event?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <!-- Adjusted button ID to match modal trigger -->
+                <button type="button" class="btn btn-primary" id="confirmJoinEventButton">Join Event</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Handle join event button click
+            $('#confirmJoinEventButton').click(function () {
+                // Close the modal
+                $('#joinEventModal').modal('hide');
+                // Redirect to ticket generation page
+                window.location.href = '@Url.Action("GenerateTicket", "Event", new { id = Model.Id })';
+            });
+        });
+    </script>
+}

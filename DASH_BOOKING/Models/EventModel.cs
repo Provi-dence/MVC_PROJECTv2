@@ -18,6 +18,9 @@ namespace DASH_BOOKING.Models
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:HH:mm}")]
         public DateTime EventTime { get; set; }
 
+        [Display(Name = "Event Category")]
+        public string EventCategory { get; set; }
+
         public string Description { get; set; }
 
         public string Location { get; set; }

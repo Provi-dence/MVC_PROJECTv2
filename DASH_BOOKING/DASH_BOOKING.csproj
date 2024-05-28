@@ -162,6 +162,22 @@
     <Compile Include="Migrations\202405270625105_UpdateEventTime.Designer.cs">
       <DependentUpon>202405270625105_UpdateEventTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202405271428137_UpdateUserSchema.cs" />
+    <Compile Include="Migrations\202405271428137_UpdateUserSchema.Designer.cs">
+      <DependentUpon>202405271428137_UpdateUserSchema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405271443243_UpdateUserModel.cs" />
+    <Compile Include="Migrations\202405271443243_UpdateUserModel.Designer.cs">
+      <DependentUpon>202405271443243_UpdateUserModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405271707520_AddIsPasswordHashedToUsers.cs" />
+    <Compile Include="Migrations\202405271707520_AddIsPasswordHashedToUsers.Designer.cs">
+      <DependentUpon>202405271707520_AddIsPasswordHashedToUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202405280321441_AddEventCategoryToEventModel.cs" />
+    <Compile Include="Migrations\202405280321441_AddEventCategoryToEventModel.Designer.cs">
+      <DependentUpon>202405280321441_AddEventCategoryToEventModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\EventModel.cs" />
@@ -543,6 +559,9 @@
     <Content Include="Views\Accounts\EventList.cshtml" />
     <Content Include="Views\Accounts\Deactivated.cshtml" />
     <Content Include="Views\Accounts\Add.cshtml" />
+    <Content Include="Views\Home\LandingPage.cshtml" />
+    <Content Include="Views\Shared\Home_Layout.cshtml" />
+    <Content Include="Views\Event\GenerateTicket.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -596,6 +615,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202405270625105_UpdateEventTime.resx">
       <DependentUpon>202405270625105_UpdateEventTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405271428137_UpdateUserSchema.resx">
+      <DependentUpon>202405271428137_UpdateUserSchema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405271443243_UpdateUserModel.resx">
+      <DependentUpon>202405271443243_UpdateUserModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405271707520_AddIsPasswordHashedToUsers.resx">
+      <DependentUpon>202405271707520_AddIsPasswordHashedToUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202405280321441_AddEventCategoryToEventModel.resx">
+      <DependentUpon>202405280321441_AddEventCategoryToEventModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

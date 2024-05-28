@@ -20,6 +20,8 @@ namespace DASH_BOOKING.Models
         [StringLength(100)]
         public string Password { get; set; }
 
+        public bool IsPasswordHashed { get; set; } // New flag to check if password is hashed
+
         [Required]
         public string Role { get; set; } = "User";  // Default role
 
@@ -31,6 +33,8 @@ namespace DASH_BOOKING.Models
         {
             CreatedAt = DateTime.Now;
         }
+
+
     }
 
     public class Admin : User

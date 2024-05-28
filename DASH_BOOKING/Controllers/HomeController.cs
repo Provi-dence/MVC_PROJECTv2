@@ -27,6 +27,11 @@ namespace DASH_BOOKING.Controllers
         {
             return View();
         }
+
+        public ActionResult LandingPage()
+        {
+            return View();
+        }
     }
 
 }
